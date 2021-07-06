@@ -1,5 +1,5 @@
-from MetadataModel import MetadataModel
-from Proxy import Proxy
+from .MetadataModel import MetadataModel
+from .Proxy import Proxy
 
 class Artist(MetadataModel):
     """Represents an artist or group."""

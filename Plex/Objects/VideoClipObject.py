@@ -1,6 +1,6 @@
 from datetime import date
-from MediaObject import MediaObject
-from MetadataObject import MediaSupportingMetadataObject
+from .MediaObject import MediaObject
+from .MetadataObject import MediaSupportingMetadataObject
 
 class VideoClipObject(MediaSupportingMetadataObject):
     """Represents a video clip."""

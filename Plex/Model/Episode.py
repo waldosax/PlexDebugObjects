@@ -1,5 +1,5 @@
-from MetadataModel import MetadataModel
-from Proxy import Proxy
+from .MetadataModel import MetadataModel
+from .Proxy import Proxy
 
 class Episode(MetadataModel):
     """Represents an episode of a TV show or other episodic content."""

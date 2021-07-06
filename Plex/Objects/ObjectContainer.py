@@ -1,10 +1,10 @@
-from MetadataObject import MetadataObject
-from MovieObject import MovieObject
+from .MetadataObject import MetadataObject
+# from .MovieObject import MovieObject
+# from .TVShowObject import TVShowObject
 
 
 class ObjectContainer:
     """A container for other objects. ObjectContainer is the type most frequently returned to other applications. It provides clients with an ordered list of items in response to a request."""
-
     def __init__(self, **kwargs):
         self.view_group = str(kwargs.get("view_group"))
         """A string specifying the name of the view group the client should use when displaying the container’s contents. This should be the name of a group previously registered with Plugin.AddViewGroup()."""
@@ -85,11 +85,11 @@ oc = ObjectContainer(
 
 
 
-tv = MovieObject(title="Sanford & Son")
-container = ObjectContainer(
-    title1="foo",
-    objects = [tv]
-  )
-movie = MovieObject(title="The Godfather")
-container.add(movie)
-print (ObjectContainer.len(container))
+# tv = TVShowObject(title="Sanford & Son")
+# container = ObjectContainer(
+#     title1="foo",
+#     objects = [tv]
+#   )
+# movie = MovieObject(title="The Godfather")
+# container.add(movie)
+# print (ObjectContainer.len(container))

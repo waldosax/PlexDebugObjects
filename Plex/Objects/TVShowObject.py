@@ -1,5 +1,5 @@
 from datetime import date
-from MetadataObject import MetadataObject
+from .MetadataObject import MetadataObject
 
 class TVShowObject(MetadataObject):
     """Represents a TV show, or the top-level of other episodic content."""

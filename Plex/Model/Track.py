@@ -1,5 +1,5 @@
-from MetadataModel import MetadataModel
-from Proxy import Proxy
+from .MetadataModel import MetadataModel
+from .Proxy import Proxy
 
 class Track(MetadataModel):
     """Represents an audio track (e.g. music, audiobook, podcast, etc.)"""

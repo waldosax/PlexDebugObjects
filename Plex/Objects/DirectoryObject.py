@@ -1,4 +1,4 @@
-from GenericBrowsingObject import GenericBrowsingObject
+from .GenericBrowsingObject import GenericBrowsingObject
 
 class DirectoryObject(GenericBrowsingObject):
     """Represents a generic container of objects. Directory objects are usually used when creating a navigation hierarchy."""

@@ -1,4 +1,4 @@
-from GenericBrowsingObject import GenericBrowsingObject
+from .GenericBrowsingObject import GenericBrowsingObject
 
 class PrefsObject(GenericBrowsingObject):
     """Represents an item that invokes the user preferences dialog when selected."""

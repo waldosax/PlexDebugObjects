@@ -1,4 +1,4 @@
-from MediaObject import MediaObject
+from .MediaObject import MediaObject
 
 class MetadataObject:
     """Base class for all metadata objects."""

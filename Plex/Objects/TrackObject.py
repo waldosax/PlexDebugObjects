@@ -1,5 +1,5 @@
 from datetime import date
-from MetadataObject import MediaSupportingMetadataObject
+from .MetadataObject import MediaSupportingMetadataObject
 
 class TrackObject(MediaSupportingMetadataObject):
     """Represents an audio track (e.g. music, audiobook, podcast, etc.)"""

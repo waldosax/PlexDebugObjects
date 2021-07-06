@@ -1,7 +1,7 @@
 from datetime import date
-from MetadataModel import MetadataModel
-from Proxy import Proxy
-from Track import Track
+from .MetadataModel import MetadataModel
+from .Proxy import Proxy
+from .Track import Track
 
 class Album(MetadataModel):
     """Represents a music album."""

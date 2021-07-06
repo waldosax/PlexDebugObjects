@@ -1,4 +1,4 @@
-from PartObject import PartObject
+from .PartObject import PartObject
 
 class MediaObject:
     """Represents a single piece of media. Each metadata object may have multiple media objects associated with it. All media objects for the metadata object should refer to the same media, but in different formats, resolutions and/or containers (where available), allowing the client to choose the most appropriate item for playback."""

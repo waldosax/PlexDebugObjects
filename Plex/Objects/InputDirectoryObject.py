@@ -1,4 +1,4 @@
-from PopupDirectoryObject import PopupDirectoryObject
+from .PopupDirectoryObject import PopupDirectoryObject
 
 class InputDirectoryObject(PopupDirectoryObject):
     """Represents a container of objects generated from a query inputted by the user. The client will display an input dialog with the given prompt."""

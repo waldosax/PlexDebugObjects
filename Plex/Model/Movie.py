@@ -1,5 +1,5 @@
-from MetadataModel import MetadataModel
-from Proxy import Proxy
+from .MetadataModel import MetadataModel
+from .Proxy import Proxy
 
 class Movie(MetadataModel):
     """Represents a movie (e.g. a theatrical release, independent film, home movie, etc.)"""

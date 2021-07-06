@@ -1,5 +1,5 @@
 from datetime import date
-from MetadataObject import MetadataObject
+from .MetadataObject import MetadataObject
 
 class AlbumObject(MetadataObject):
     """Represents a music album."""

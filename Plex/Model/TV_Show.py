@@ -1,5 +1,5 @@
-from MetadataModel import MetadataModel
-from Proxy import Proxy
+from .MetadataModel import MetadataModel
+from .Proxy import Proxy
 
 class TV_Show(MetadataModel):
     """Represents a TV show, or the top-level of other episodic content."""

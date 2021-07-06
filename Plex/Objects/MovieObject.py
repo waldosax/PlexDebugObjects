@@ -1,6 +1,6 @@
 from datetime import date
-from MediaObject import MediaObject
-from MetadataObject import MediaSupportingMetadataObject
+from .MediaObject import MediaObject
+from .MetadataObject import MediaSupportingMetadataObject
 
 class MovieObject(MediaSupportingMetadataObject):
     """Represents a movie (e.g. a theatrical release, independent film, home movie, etc.)"""

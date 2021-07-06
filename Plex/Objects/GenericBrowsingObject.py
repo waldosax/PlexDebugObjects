@@ -1,4 +1,4 @@
-from MetadataObject import MetadataObject
+from .MetadataObject import MetadataObject
 
 class GenericBrowsingObject(MetadataObject):
     """Base class for all generic browsing objects."""

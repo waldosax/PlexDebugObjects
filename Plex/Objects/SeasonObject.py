@@ -1,4 +1,4 @@
-from MetadataObject import MetadataObject
+from .MetadataObject import MetadataObject
 
 class SeasonObject(MetadataObject):
     """Represents a season of a TV show."""
