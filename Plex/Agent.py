@@ -1,6 +1,6 @@
-from Media import Media
-from Model.MetadataModel import MetadataModel
-from Objects.ObjectContainer import ObjectContainer
+from .Media import Media
+from .Model.MetadataModel import MetadataModel
+from .Objects.ObjectContainer import ObjectContainer
 
 class _Agent:
     def __init__(self, **kwargs):
@@ -32,9 +32,6 @@ class _Agent:
                 self.contributes_to.append(str(item))
         
         
-
-    def start(self):
-        pass
 
     def search(self, results: ObjectContainer, media: Media, lang: str, manual: bool):
         """Searching for results to provide matches for media

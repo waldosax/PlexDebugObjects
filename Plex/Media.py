@@ -1,4 +1,4 @@
-from Objects.MetadataObject import MetadataObject
+from .Objects.MetadataObject import MetadataObject
 
 class Media:
     """The media object provided to the search method provides the developer with all the hints found by the media server while scanning for media. For media that contains several individual playable items (e.g. albums or TV shows), the hints for the most recent item are provided."""
