@@ -103,3 +103,13 @@ This attribute is only available for Album metadata searches."""
                     self.items.append(item)
         
         
+
+
+def Episode(show: str, season: (int, None), episode: str, title: str, year: (int, None)):
+    return Media({
+        show: show,
+        season: season,
+        episode: episode,
+        name: title,
+        year: year
+    })
