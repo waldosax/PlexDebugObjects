@@ -7,17 +7,17 @@ class Season(MetadataModel):
     def __init__(self, **kwargs):
         super().__init__()
         self.summary = str(kwargs.get("summary"))
-        """A string specifying the season’s summary."""
+        """A string specifying the season's summary."""
         
         self.posters = []
-        """A container of proxy objects representing the season’s posters. See below for information about proxy objects."""
+        """A container of proxy objects representing the season's posters. See below for information about proxy objects."""
         if kwargs.get("posters"):
             for item in kwargs["posters"]:
                 if (isinstance(item, Proxy)):
                     self.posters.append(item)
         
         self.banners = []
-        """A container of proxy objects representing the season’s banner images. See below for information about proxy objects."""
+        """A container of proxy objects representing the season's banner images. See below for information about proxy objects."""
         if kwargs.get("banners"):
             for item in kwargs["banners"]:
                 if (isinstance(item, Proxy)):

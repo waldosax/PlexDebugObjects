@@ -6,16 +6,16 @@ class AlbumObject(MetadataObject):
     def __init__(self, **kwargs):
         super().__init__()
         self.key = str(kwargs.get("key"))
-        """A string specifying the path to a container representing the album’s tracks. This is usually a function callback generated using Callback()."""
+        """A string specifying the path to a container representing the album's tracks. This is usually a function callback generated using Callback()."""
         
         self.genres = []
-        """A list of strings specifying the album’s genres."""
+        """A list of strings specifying the album's genres."""
         if kwargs.get("genres"):
             for item in kwargs["genres"]:
                 self.genres.append(str(item))
         
         self.tags = []
-        """A list of strings specifying the album’s tags."""
+        """A list of strings specifying the album's tags."""
         if kwargs.get("tags"):
             for item in kwargs["tags"]:
                 self.tags.append(str(item))
@@ -24,10 +24,10 @@ class AlbumObject(MetadataObject):
         """An integer specifying the duration of the album, in milliseconds."""
         
         self.rating = float(kwargs.get("rating")) if kwargs.get("rating") else None
-        """A float between 0 and 10 specifying the album’s rating."""
+        """A float between 0 and 10 specifying the album's rating."""
         
         self.original_title = str(kwargs.get("original_title"))
-        """A string specifying the album’s original title."""
+        """A string specifying the album's original title."""
         
         self.source_title = str(kwargs.get("source_title"))
         """A string specifying the source of the album (e.g. Rhapsody or Spotify)"""
@@ -36,19 +36,19 @@ class AlbumObject(MetadataObject):
         """A string specifying the artist the album belongs to."""
         
         self.title = str(kwargs.get("title"))
-        """A string specifying the album’s title."""
+        """A string specifying the album's title."""
         
         self.summary = str(kwargs.get("summary"))
-        """A string specifying the album’s summary."""
+        """A string specifying the album's summary."""
         
         self.studio = str(kwargs.get("studio"))
-        """A string specifying the album’s studio."""
+        """A string specifying the album's studio."""
         
         self.originally_available_at = kwargs.get("originally_available_at") if isinstance(kwargs.get("originally_available_at"), date) else None
-        """A date object specifying the album’s original release date."""
+        """A date object specifying the album's original release date."""
         
         self.producers = []
-        """A list of strings specifying the album’s producers."""
+        """A list of strings specifying the album's producers."""
         if kwargs.get("producers"):
             for item in kwargs["producers"]:
                 self.producers.append(str(item))
@@ -63,9 +63,9 @@ class AlbumObject(MetadataObject):
         """An integer value specifying the number of tracks the album contains."""
         
         self.thumb = str(kwargs.get("thumb"))
-        """A string specifying an image resource to use as the album’s thumbnail."""
+        """A string specifying an image resource to use as the album's thumbnail."""
         
         self.art = str(kwargs.get("art"))
-        """A string specifying an image resource to use as the album’s background art."""
+        """A string specifying an image resource to use as the album's background art."""
         
         

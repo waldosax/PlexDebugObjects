@@ -8,13 +8,13 @@ class PartObject:
         """An integer specifying the duration of the part, in milliseconds."""
         
         
-def WebVideoURL(url: str) -> str:
+def WebVideoURL(url):
     return url
 
-def RTMPVideoURL(url: str, clip=None, clips=None, width=None, height=None, live=False) -> str:
+def RTMPVideoURL(url, clip=None, clips=None, width=None, height=None, live=False):
     return url
 
-def WindowsMediaVideoURL(url: str, width=None, height=None) -> str:
+def WindowsMediaVideoURL(url, width=None, height=None):
     return url
 
 

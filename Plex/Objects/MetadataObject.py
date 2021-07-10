@@ -17,6 +17,6 @@ class MediaSupportingMetadataObject:
                     self.items.append(item)
 
 
-    def add(self, obj: MediaObject()):
+    def add(self, obj):
         if (isinstance(obj, MediaObject)):
             self.items.append(obj)

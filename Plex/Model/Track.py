@@ -6,6 +6,6 @@ class Track(MetadataModel):
     def __init__(self, **kwargs):
         super().__init__()
         self.name = str(kwargs.get("name"))
-        """A string specifying the track’s name."""
+        """A string specifying the track's name."""
         
         

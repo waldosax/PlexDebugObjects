@@ -16,25 +16,25 @@ class MediaObject:
                 self.platforms.append(str(item))
         
         self.bitrate = int(kwargs.get("bitrate")) if kwargs.get("bitrate") else None
-        """An integer specifying the media’s bitrate."""
+        """An integer specifying the media's bitrate."""
         
         self.aspect_ration = float(kwargs.get("aspect_ration")) if kwargs.get("aspect_ration") else None
-        """An integer specifying the media’s aspect ratio (width / height)."""
+        """An integer specifying the media's aspect ratio (width / height)."""
         
         self.audio_channels = int(kwargs.get("audio_channels")) if kwargs.get("audio_channels") else None
         """An integer specifying the number of audio channels the media has (e.g. 2 for stereo, 6 for 5.1)."""
         
         self.audio_codec = str(kwargs.get("audio_codec"))
-        """A string specifying the media’s audio codec. This attribute should be set to one of the constants defined in AudioCodec."""
+        """A string specifying the media's audio codec. This attribute should be set to one of the constants defined in AudioCodec."""
          
         self.video_codec = str(kwargs.get("video_codec"))
-        """A string specifying the media’s video codec. This attribute should be set to one of the constants defined in VideoCodec."""
+        """A string specifying the media's video codec. This attribute should be set to one of the constants defined in VideoCodec."""
         
         self.video_resolution = int(kwargs.get("video_resolution")) if kwargs.get("video_resolution") else None
         """An integer specifying the vertical resolution of the video."""
         
         self.container = str(kwargs.get("container"))
-        """A string specifying the media’s container. This attribute should be set to one of the constants defined in Container."""
+        """A string specifying the media's container. This attribute should be set to one of the constants defined in Container."""
         
         self.video_frame_rate = int(kwargs.get("video_frame_rate")) if kwargs.get("video_frame_rate") else None
         """An integer representing the frame rate of the media."""
@@ -50,8 +50,8 @@ class MediaObject:
         
         
         
-    def add(self, obj: PartObject):
-        """Adds the PartObject instance obj to the media object’s list of parts. The media object can also be populated by passing a list of objects to the constructor as the parts argument:
+    def add(self, obj):
+        """Adds the PartObject instance obj to the media object's list of parts. The media object can also be populated by passing a list of objects to the constructor as the parts argument:
 
 media = MediaObject(
   parts = [

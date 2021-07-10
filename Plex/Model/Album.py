@@ -8,13 +8,13 @@ class Album(MetadataModel):
     def __init__(self, **kwargs):
         super().__init__()
         self.genres = []
-        """A list of strings specifying the album’s genres."""
+        """A list of strings specifying the album's genres."""
         if kwargs.get("genres"):
             for item in kwargs["genres"]:
                 self.genres.append(str(item))
         
         self.tags = []
-        """A list of strings specifying the album’s tags."""
+        """A list of strings specifying the album's tags."""
         if kwargs.get("tags"):
             for item in kwargs["tags"]:
                 self.tags.append(str(item))
@@ -26,25 +26,25 @@ class Album(MetadataModel):
                 self.collections.append(str(item))
         
         self.rating = float(kwargs.get("rating")) if kwargs.get("rating") else None
-        """A float between 0 and 10 specifying the album’s rating."""
+        """A float between 0 and 10 specifying the album's rating."""
         
         self.original_title = str(kwargs.get("original_title"))
-        """A string specifying the album’s original title."""
+        """A string specifying the album's original title."""
         
         self.title = str(kwargs.get("title"))
-        """A string specifying the album’s title."""
+        """A string specifying the album's title."""
         
         self.summary = str(kwargs.get("summary"))
-        """A string specifying the album’s summary."""
+        """A string specifying the album's summary."""
         
         self.studio = str(kwargs.get("studio"))
-        """A string specifying the album’s studio."""
+        """A string specifying the album's studio."""
         
         self.originally_available_at = kwargs.get("originally_available_at") if isinstance(kwargs.get("originally_available_at"), date) else None
-        """A date object specifying the album’s original release date."""
+        """A date object specifying the album's original release date."""
         
         self.producers = []
-        """A list of strings specifying the album’s producers."""
+        """A list of strings specifying the album's producers."""
         if kwargs.get("producers"):
             for item in kwargs["producers"]:
                 self.producers.append(str(item))
@@ -56,14 +56,14 @@ class Album(MetadataModel):
                 self.countries.append(str(item))
         
         self.posters = []
-        """A container of proxy objects representing the album’s covers. See below for information about proxy objects."""
+        """A container of proxy objects representing the album's covers. See below for information about proxy objects."""
         if kwargs.get("posters"):
             for item in kwargs["posters"]:
                 if (isinstance(item, Proxy)):
                     self.posters.append(item)
         
         self.tracks = []
-        """A map of Track objects representing the album’s tracks."""
+        """A map of Track objects representing the album's tracks."""
         if kwargs.get("tracks"):
             for item in kwargs["tracks"]:
                 if (isinstance(item, Track)):
