@@ -1,6 +1,6 @@
-from .MetadataObject import MetadataObject
-# from .MovieObject import MovieObject
-# from .TVShowObject import TVShowObject
+import MetadataObject
+#import MovieObject
+#import TVShowObject
 
 
 class ObjectContainer:

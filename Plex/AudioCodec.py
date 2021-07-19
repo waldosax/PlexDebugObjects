@@ -1,2 +1,3 @@
-AAC = "AAC"
-MP3 = "MP3"
+class AudioCodec:
+	AAC = "AAC"
+	MP3 = "MP3"
